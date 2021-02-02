@@ -5,10 +5,8 @@
 
 trigger:
 - main
-- task: Docker@2
+- task: Bash@3
   inputs:
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
 pool:
   vmImage: 'ubuntu-latest'
 
